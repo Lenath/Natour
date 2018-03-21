@@ -1,6 +1,6 @@
 .btn{
-	$:link,
-	$:visited{
+	&:link,
+	&:visited{
 		text-transform: uppercase;
 		text-decoration: none;
 		padding: 1.5rem 4rem;
@@ -10,21 +10,21 @@
 		position: relative;
 		font-size: 1.6rem;
 	}
-	$:hover{
+	&:hover{
 		transform: translateY(-3px);
 		box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
 	}
-	$:active{
+	&:active{
 		transform: translateY(-1px);
 		box-shadow: 0 .5rem 1rem rgba($color-black, 0.2)
 	}
 
-	$--white{
+	&--white{
 		background-color: white;
 		color: $color-grey-dark;
 	}
-	$::after{
+	&::after{
 		content: "";
 		display: inline-block;
 		height: 100%;
@@ -37,14 +37,14 @@
 		transition: all .4s;
 
 	}
-	$--white::after{
+	&--white::after{
 		background-color: $color-white;
 	}
-	$:hover::after{
+	&:hover::after{
 		transform: scaleX(1.4) scaleY(1.6);
 		opacity: 0;
 	}
-	$--animated{
+	&--animated{
 		animation-name: moveInUp;
 		animation-duration: .5s;
 		animation-timing-function: ease-out;
